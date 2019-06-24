@@ -1,6 +1,6 @@
 exports.seed = function(knex, Promise) {
   return knex('kitchen').del().then(function() {
-    return knex('table_name').insert([
+    return knex('kitchen').insert([
       {
         id: 1,
         kitchen_name: 'Test Kitchen',
