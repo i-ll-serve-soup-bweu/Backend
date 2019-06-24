@@ -17,7 +17,7 @@ function findBy(filter) {
   return db('kitchen').where(filter);
 }
 
-async function add(party) {
+async function add(kitchen) {
   const [ id ] = await db('kitchen').insert(kitchen);
 
   return findById(id);
